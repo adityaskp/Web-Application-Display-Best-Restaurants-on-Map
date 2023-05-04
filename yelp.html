@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Student Name:   -->
+<html lang="en">
+  <head>
+    <style>
+  #map {
+    height: 600px;
+    width: 500px;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+    <title>Web Mashup: Display Best Restaurants on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="yelp.js"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+    </form>
+    <div id="output">
+      <div id = "map"></div>
+      <ol id = 'list'>
+      </ol>
+
+      &nbsp;</div>
+  </body>
+</html>
